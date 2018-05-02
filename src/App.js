@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/navbar";
 import Header from "./components/header";
@@ -15,8 +14,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-	  <h1>Main h1 header, temporary placeholder</h1>
 	  
 	  <Navbar />
 	  
@@ -24,8 +21,15 @@ class App extends Component {
 	  
 	  <Header />
 	  
-
+	  <Sidebar />
 	  
+	  <Menu />
+	  
+	  <Body />
+	  
+	  <Reviews />
+
+	  <Footer />
 	  
 	  
 	  

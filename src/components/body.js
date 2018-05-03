@@ -14,7 +14,6 @@ class Body extends React.Component{
 		<Intro />
 		
 		
-	
 		
 		</div>
 			  

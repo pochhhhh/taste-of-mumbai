@@ -25,7 +25,66 @@ atmosphere, all ages are welcome as we cater for all</p>
 			
 			</div>
 			
-			<div className="side-info-right"></div>
+			<div className="side-info-right">
+			
+			<div className="social-media-panel"> 
+			
+				<i class="fa fa-instagram fa-2x"></i>
+				<i class="fa fa-facebook fa-2x"></i>
+				<i class="fa fa-twitter fa-2x"></i>
+				<i class="fa fa-youtube fa-2x"></i>
+			
+			</div>
+			
+			<ul>
+			
+			<li>
+			<h2>Phone</h2>
+			
+			<ul>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			</ul>
+			
+			</li>
+				<li>
+				<h2>Opening Hours</h2>
+					
+			<ul>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			</ul>
+				</li>
+
+					<li>
+					<h2>Location</h2>
+						
+			<ul>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			</ul>
+					
+					
+					</li>
+						<li><h2>Last Orders</h2>
+							
+			<ul>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			<li>Inner LI item</li>
+			</ul>
+						</li>
+	
+			
+			
+			</ul>
+		
+			
+			
+			</div>
 
 	
 	

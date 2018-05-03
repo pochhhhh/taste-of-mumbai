@@ -87,7 +87,33 @@ grid-column-start:3;
 /* Body */
 
 .Body{
-width:100vw;
-height:auto;
-background:orange;
+width:85vw;
+margin: 0 auto;
+height:500px;
+background:pink;
+}
+
+/* Intro */
+
+.Intro{
+	
+display:grid;
+height:100%;
+background:cyan;
+grid-template-columns: 3fr 1fr;
+text-align:center;
+	
+}
+
+.intro-text{
+	
+	background:lime;
+	
+	
+}
+
+.side-info-right{
+	
+	background:yellow;
+	
 }

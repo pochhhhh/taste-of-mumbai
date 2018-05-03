@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import "./style.css";
 import Navbar from "./components/navbar";
-import Header from "./components/header";
+//import Header from "./components/header";
 import Gallery from "./components/gallery";
+import Sidebar from "./components/sidebar";
 import Menu from "./components/menu";
 import Body from "./components/body";
-import Sidebar from "./components/sidebar";
 import Reviews from "./components/reviews";
 import Footer from "./components/footer";
 
@@ -17,13 +17,7 @@ class App extends Component {
 	  
 	  <Navbar />
 	  
-	  	  <Gallery />
-	  
-	  <Header />
-	  
-	  <Sidebar />
-	  
-	  <Menu />
+	  <Gallery />
 	  
 	  <Body />
 	  

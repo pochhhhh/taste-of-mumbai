@@ -8,7 +8,7 @@ class Navbar extends React.Component{
 		
 		return(
 		
-<nav className="navbar navbar-default">
+<nav className="Navbar navbar-default">
 		
 		
 		<div className="navbar-logo">/*<img src=""/>*/Taste of Mumbai logo</div>

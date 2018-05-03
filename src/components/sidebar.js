@@ -5,10 +5,12 @@ class Sidebar extends React.Component{
 	render(){
 		
 		return(
-	<div><h4>This is the sidebar component</h4></div>
-
-		
-		
+	<div>
+	
+	<h1>this text comes from sidebar.js</h1>
+	
+	</div>
+	
 		);
 		
 		

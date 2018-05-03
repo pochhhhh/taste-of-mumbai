@@ -7,7 +7,19 @@ class Gallery extends React.Component{
 		
 		return(
 		
-		<div>Gallery</div>
+		<div className="Gallery">
+		
+		
+		<div className="gallery-button-panel">
+		
+		<div className="gallery-button gallery-button-left"></div>
+		<div className="gallery-button gallery-button-right"></div>
+		
+		
+		</div>
+		
+		
+		</div>
 		
 		);
 		
@@ -16,9 +28,6 @@ class Gallery extends React.Component{
 	
 	
 }
-
-
-
 
 
 export default Gallery;

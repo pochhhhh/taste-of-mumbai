@@ -8,7 +8,32 @@ class Navbar extends React.Component{
 		
 		return(
 		
-		<div><h1>THIS IS THE NAVBAR</h1></div>
+<nav className="navbar navbar-default">
+		
+		
+		<div className="navbar-logo">/*<img src=""/>*/Taste of Mumbai logo</div>
+		
+		<ul>
+		
+		<a href="#"><li>List Item</li></a>
+			<a href="#"><li>List Item</li></a>
+				<a href="#"><li>List Item</li></a>
+					<a href="#"><li>List Item</li></a>
+						<a href="#"><li>List Item</li></a>
+							<a href="#"><li>List Item</li></a>
+								<a href="#"><li>List Item</li></a>
+									<a href="#"><li>List Item</li></a>
+
+
+																
+	
+		</ul>
+		
+		
+		
+		
+		
+		</nav>
 		
 		);
 		

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import "./style.css";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
 import Gallery from "./components/gallery";
@@ -30,11 +30,6 @@ class App extends Component {
 	  <Reviews />
 
 	  <Footer />
-	  
-	  
-	  
-	
-	  
 	  
       </div>
     );

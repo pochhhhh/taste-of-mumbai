@@ -7,7 +7,10 @@ class Header extends React.Component{
 		
 		return(
 		
-		<h1>This is the main header</h1>
+		
+		<h1>This is the header</h1>
+		
+		
 		
 		);
 		

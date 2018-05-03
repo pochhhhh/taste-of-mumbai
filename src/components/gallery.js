@@ -7,7 +7,7 @@ class Gallery extends React.Component{
 		
 		return(
 		
-		<div>This is the gallery</div>
+		<div>Gallery</div>
 		
 		);
 		

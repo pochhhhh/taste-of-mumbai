@@ -9,13 +9,15 @@ constructor(props){
 	this.state = {
 	
 	currentReview: 1,
+	name: "Marlon James Pempengco",
 	reviews: [
 	"Awesome review 1",
 	"Awesome review 2", 
 	"Awesome review 3", 
 	"Awesome review 4"]
-	
+
 	}
+	
 	
 	
 }
@@ -30,7 +32,7 @@ constructor(props){
 	
 	<div className="review-message">
 	
-	<p>This restaurant is awesome! This restaurant is awesome! This restaurant is awesome! This restaurant is awesome! This restaurant is awesome! This restaurant is awesome! This restaurant is awesome!</p>
+	<p>{this.state.name}</p>
 	
 	</div>
 

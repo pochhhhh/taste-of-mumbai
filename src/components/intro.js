@@ -106,5 +106,4 @@ atmosphere, all ages are welcome as we cater for all</p>
 }
 
 
-
 export default Intro;

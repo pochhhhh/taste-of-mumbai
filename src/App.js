@@ -40,7 +40,7 @@ class App extends Component {
 	  
 	  <Body showState={this.state.stateMessage}/>
 	  
-		<StaticImages />
+	  <StaticImages />
 	  
 	  <Reviews />
 

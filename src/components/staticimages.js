@@ -1,38 +1,37 @@
 import React from "react";
 
 
-function StaticImages () {
+const StaticImages = () => {
 	
 return(
 
-<div>
+<div className="StaticImages">
 
-<h1>StaticImages component loaded successfully</h1>
+<div className="box-panel">
 
-
-		
-		<div className="bottom-showcase-box">
+		<div className="box">
 		<img src=""/>
 		</div>
 	
-			<div className="bottom-showcase-box">
-		<img src=""/>
-		</div>
-				<div className="bottom-showcase-box">
-		<img src=""/>
-		</div>
-				<div className="bottom-showcase-box">
+		<div className="box">
 		<img src=""/>
 		</div>
 		
-
+		<div className="box">
+		<img src=""/>
+		</div>
+		
+		<div className="box">
+		<img src=""/>
+		</div>
+		
+</div>
 		
 </div>
 
 
 );	
-	
-	
+		
 }
 
 

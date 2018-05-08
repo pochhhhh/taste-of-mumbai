@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from "./components/navbar";
-import Header from "./components/header";
-import Intro from "./components/intro";
 import Gallery from "./components/gallery";
-import Sidebar from "./components/sidebar";
-import Menu from "./components/menu";
 import Body from "./components/body";
 import StaticImages from "./components/staticimages";
 import Reviews from "./components/reviews";
@@ -27,7 +23,6 @@ class App extends Component {
 		}
 		
 	}
-
 
   render() {
 	  

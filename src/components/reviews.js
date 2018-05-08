@@ -2,7 +2,7 @@ import React from "react";
 
 class Reviews extends React.Component{
 	
-constructor(props){
+	constructor(props){
 	
 	super(props);
 	
@@ -17,8 +17,6 @@ constructor(props){
 	"Awesome review 4"]
 
 	}
-	
-	
 	
 }
 

@@ -1,10 +1,8 @@
 import React from "react";
 
 
-
 class Intro extends React.Component{
 	
-
 	alertScreen = () => {
 		
 		alert("hi!");
@@ -17,9 +15,11 @@ class Intro extends React.Component{
 			
 			<div className="intro-text">
 							
-			<h1>{this.props.introState} from the Intro component</h1>
+							{/*<h1>{this.props.introState} from the Intro component</h1>*/}
 			
 			<h1>Prepare to treat your tastebuds!</h1>
+			
+			<hr/>
 			
 			<br/>
 			
@@ -44,15 +44,15 @@ atmosphere, all ages are welcome as we cater for all</p>
 			
 			</div>
 			
+		
 			<ul>
 			
 			<li>
 			<h2>Phone</h2>
 			
 			<ul>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
+			<li>0800000000</li>
+
 			</ul>
 			
 			</li>
@@ -60,9 +60,7 @@ atmosphere, all ages are welcome as we cater for all</p>
 				<h2>Opening Hours</h2>
 					
 			<ul>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
+			<li>12pm - 11pm</li>
 			</ul>
 				</li>
 
@@ -70,9 +68,7 @@ atmosphere, all ages are welcome as we cater for all</p>
 					<h2>Location</h2>
 						
 			<ul>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
+			<li>Wakanda</li>
 			</ul>
 					
 					
@@ -80,21 +76,16 @@ atmosphere, all ages are welcome as we cater for all</p>
 						<li><h2>Last Orders</h2>
 							
 			<ul>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
-			<li>Inner LI item</li>
+			<li>10:45pm</li>
+
 			</ul>
 						</li>
-	
-			
-			
+				
 			</ul>
 		
 			
 			
 			</div>
-
-	
 	
 	</div>);
 	

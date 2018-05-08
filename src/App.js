@@ -15,10 +15,10 @@ class App extends Component {
 		super(props);
 		
 		this.state = {
-			
+		
+		companyName: "TASTE OF MUMBAI",
 		showIntro: true,
-		stateMessage: "State accessed",
-		houseNumber: 540
+		introText: "Taste of Mumbai welcomes you to enjoy traditional Mumbai cuisine, with a twist of indo Chinese, Punjabi and Gujarati dishes. We use fresh ingredients and the finest of herbs & spices. Mumbai Junction is a great place to bring your family and friends, with a fantastic family atmosphere, all ages are welcome as we cater for all"
 			
 		}
 		
@@ -27,13 +27,15 @@ class App extends Component {
   render() {
 	  
     return (
-      <div className="App">
+	
+	<div className="App">
+	 
 	  
 	  <Navbar />
 	  
 	  <Gallery />
 	  
-	  <Body showState={this.state.stateMessage}/>
+	  <Body companyName = {this.state.companyName} introText={this.state.introText} showIntro = {this.state.showIntro}/>
 	  
 	  <StaticImages />
 	  
@@ -42,7 +44,7 @@ class App extends Component {
 	  <Footer />
 	  
       </div>
-    );
+	  );
   }
 }
 

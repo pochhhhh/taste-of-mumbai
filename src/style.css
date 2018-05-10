@@ -230,6 +230,49 @@ left:-20px;
 top:10px;	
 }
 
+/* Menu */
+
+.menu-panel{	
+	height:90%;
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;	
+}
+.menu-subsection{
+	margin: 0 auto;
+	background:none;
+	height:200px;
+	width:250px;	
+}
+.menu-subsection img{	
+height:200px;
+width:250px;
+position:absolute;
+z-index:-1;
+}
+.menu-subsection h1{
+	color:yellow;
+	position:relative;
+	z-index:-1;
+
+}
+.hover-layer{
+	
+height:200px;
+width:250px;
+position:absolute;
+z-index:4;
+transition: 0.5s ease;
+}
+.hover-layer:hover{
+	
+background:rgba(0, 0, 0, 0.6);
+	
+}
+
 /* Footer */
 
 .Footer{	

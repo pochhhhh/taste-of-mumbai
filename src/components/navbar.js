@@ -11,7 +11,7 @@ class Navbar extends React.Component{
 <nav className="Navbar navbar-default">
 		
 		
-		<div className="navbar-logo"><img src={require("./logo.png")}/></div>
+		<div className="navbar-logo"><img src={require("../images/logo.png")}/></div>
 		
 		<ul>
 		

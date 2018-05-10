@@ -111,7 +111,8 @@ grid-column-start:3;
 	width:85vw;
 	margin: 0 auto;
 	height:550px;
-	background:none;
+	display:grid;
+	grid-template-columns: 3fr 1fr;
 }
 .bottom-showcase{	
 	height:200px;
@@ -123,10 +124,8 @@ grid-column-start:3;
 
 .Intro{
 	
-	display:grid;
 	height:300px;
 	background:none;
-	grid-template-columns: 3fr 1fr;
 	text-align:center;	
 }
 .intro-text{
@@ -147,33 +146,6 @@ height:50px;
 }
 .intro-text h4{
 	color: #CC842C;
-}
-.side-info-right{
-	background:none;
-	border-left: 1px solid #CC842C;
-	height:92%;
-	position:relative;
-	top:7%;
-	left:5%;
-}
-.social-media-panel{	
-	height:60px;
-	width:100%;
-	display:grid;
-	grid-template-columns: repeat(4, 1fr);	
-}
-.social-media-panel i{	
-	position:relative;
-	top:15px;	
-	color:#CC842C;	
-}
-.side-info-right ul{
-	position:relative;
-	right:20px;
-	top:-20px;	
-}
-.side-info-right ul li{	
-	list-style:none;	
 }
 
 /* StaticImages */
@@ -229,6 +201,46 @@ grid-template-columns: 1fr 1fr;
 .review-button i:hover{
 color: #CC842C;
 }
+
+/* Side Panel */
+
+.SidePanel{
+	background:none;
+	border-left: 1px solid #CC842C;
+	height:92%;
+	position:relative;
+	top:7%;
+	left:5%;
+}
+.social-media-panel{	
+	height:60px;
+	width:100%;
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);	
+}
+.SidePanel i{	
+	position:relative;
+	top:15px;	
+	left:20px;
+	color:#CC842C;	
+}
+.SidePanel ul{
+	position:relative;
+	right:20px;
+	top:-20px;	
+}
+.SidePanel ul li{	
+	list-style:none;	
+
+}
+.SidePanel ul li ul li{
+	
+	position:relative;
+	left:-20px;
+	top:10px;
+	
+}
+
 
 /* Footer */
 

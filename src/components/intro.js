@@ -4,8 +4,6 @@ import SidePanel from "./side-panel";
 
 class Intro extends React.Component{
 	
-
-
 	render(){
 		
 			return(<div className="Intro">
@@ -23,7 +21,7 @@ class Intro extends React.Component{
 			
 			<h4>Call us on 0207123456789 to book a table today!</h4>
 			
-			<button onClick={this.props.showMenu}><p>VIEW OUR MENU!</p></button>
+			<button onClick={this.props.toggleMenu}><p>VIEW OUR MENU!</p></button>
 			
 			</div>
 	
@@ -31,8 +29,6 @@ class Intro extends React.Component{
 	
 		
 	}
-	
-
 	
 }
 

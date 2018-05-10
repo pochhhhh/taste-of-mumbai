@@ -23,11 +23,11 @@ class App extends Component {
 			
 		}
 
-		this.showMenu = this.showMenu.bind(this);
+		this.toggleMenu = this.toggleMenu.bind(this);
 		
 	}
 	
-	showMenu(){
+	toggleMenu(){
 		
 		if(this.state.introShowing){
 			
@@ -57,26 +57,25 @@ class App extends Component {
     return (
 	
 	<div className="App">
-	 
 	  
-	  <Navbar />
+	<Navbar />
 	  
-	  <Gallery />
+	<Gallery />
 	  
 	<Body 
 	introShowing={this.state.introShowing} 
-	showMenu = {this.showMenu} 
+	toggleMenu = {this.toggleMenu} 
 	companyName = {this.state.companyName} 
 	introText={this.state.introText}
 	/>
 	  
-	  <StaticImages />
+	<StaticImages />
 	  
-	  <Reviews />
+	<Reviews />
 
-	  <Footer />
+	<Footer />
 	  
-      </div>
+    </div>
 	  );
   }
 }

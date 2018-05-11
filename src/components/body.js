@@ -22,7 +22,8 @@ class Body extends React.Component{
 		introText = {this.props.introText}
 		/>}
 		
-		{!this.props.introShowing && <Menu 
+		{!this.props.introShowing && 
+		<Menu 
 		toggleMenu = {this.props.toggleMenu}
 		currentFoodSubsectionMenu = {this.props.currentFoodSubsectionMenu}
 		showFoodSubsection = {this.props.showFoodSubsection}

@@ -52,12 +52,14 @@ class App extends Component {
 		
 	}
 	
-	showFoodSubsection(subsection){
+	showFoodSubsection = (subsection) => {
 		
-		alert("hi!");
+		alert(subsection);
+		
 		this.setState({
 			currentFoodSubsection: subsection
 		});
+		
 		
 	}
 	

@@ -235,7 +235,7 @@ top:10px;
 .menu-panel{	
 	height:90%;
 	width:100%;
-	margin-top:10px;
+	margin-top:50px;
 	margin-bottom:10px;
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -245,32 +245,27 @@ top:10px;
 	margin: 0 auto;
 	background:none;
 	height:200px;
-	width:250px;	
+	width:250px;
+}
+.menu-subsection:hover img{	
+	opacity:0.5;
+	transition: 0.5s ease;
 }
 .menu-subsection img{	
 height:200px;
 width:250px;
 position:absolute;
 z-index:-1;
+opacity:1;
 }
 .menu-subsection h1{
-	color:yellow;
+	color:white;
+	left:10px;
+	top:120px;
 	position:relative;
+	font-family: 'Khand', sans-serif;
 	z-index:-1;
-
-}
-.hover-layer{
-	
-height:200px;
-width:250px;
-position:absolute;
-z-index:4;
-transition: 0.5s ease;
-}
-.hover-layer:hover{
-	
-background:rgba(0, 0, 0, 0.6);
-	
+	text-shadow:1px 2px black;
 }
 
 /* Footer */

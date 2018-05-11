@@ -30,24 +30,56 @@ class Menu extends React.Component {
 
 			<img src={require("../images/starters.png")}/>
 			
-			<h1>Starters</h1>
-	
-			<div className="hover-layer"></div>
+			<h1>STARTERS</h1>
+
 	
 			</div>
-		
-		<div className="menu-subsection">Main Dishes</div>
-		
-		<div className="menu-subsection">Kids</div>
-		
-		<div className="menu-subsection">Drinks</div>
-		
-		<div className="menu-subsection">Desserts</div>
-		
-		<div className="menu-subsection">Vegetarian</div>
-		
-		
-		
+			
+			<div className="menu-subsection">			
+
+			<img src={require("../images/main-dishes.jpg")}/>
+			
+			<h1>MAIN DISHES</h1>
+
+	
+			</div>
+			
+			<div className="menu-subsection">			
+
+			<img src={require("../images/balloons.png")}/>
+			
+			<h1>KIDS</h1>
+
+	
+			</div>
+			
+			<div className="menu-subsection">			
+
+			<img src={require("../images/drinks.jpg")}/>
+			
+			<h1>DRINKS</h1>
+
+	
+			</div>
+			
+			<div className="menu-subsection">			
+
+			<img src={require("../images/desserts.webp")}/>
+			
+			<h1>DESSERTS</h1>
+
+	
+			</div>
+			
+			<div className="menu-subsection">			
+
+			<img src={require("../images/vegetarian.jpg")}/>
+			
+			<h1>VEGETARIAN</h1>
+
+	
+			</div>
+	
 		
 		</div>
 		

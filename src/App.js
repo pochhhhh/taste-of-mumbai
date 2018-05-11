@@ -19,12 +19,13 @@ class App extends Component {
 		companyName: "TASTE OF MUMBAI",
 		introShowing: true,
 		showMenu: false,
+		currentFoodSubsectionMenu: null,
 		introText: "Taste of Mumbai welcomes you to enjoy traditional Mumbai cuisine, with a twist of indo Chinese, Punjabi and Gujarati dishes. We use fresh ingredients and the finest of herbs & spices. Mumbai Junction is a great place to bring your family and friends, with a fantastic family atmosphere, all ages are welcome as we cater for all"
 			
 		}
 
 		this.toggleMenu = this.toggleMenu.bind(this);
-		
+		this.showFoodSubsection = this.showFoodSubsection.bind(this);
 	}
 	
 	toggleMenu(){
@@ -38,7 +39,7 @@ class App extends Component {
 			
 			});
 		
-		} else  {
+		} 	else  {
 			
 			this.setState({
 			
@@ -48,6 +49,15 @@ class App extends Component {
 			});		
 			
 		}
+		
+	}
+	
+	showFoodSubsection(subsection){
+		
+		alert("hi!");
+		this.setState({
+			currentFoodSubsection: subsection
+		});
 		
 	}
 	
@@ -67,6 +77,8 @@ class App extends Component {
 	toggleMenu = {this.toggleMenu} 
 	companyName = {this.state.companyName} 
 	introText={this.state.introText}
+	currentFoodSubsectionMenu = {this.state.currentFoodSubsectionMenu}
+	showFoodSubsection = {this.showFoodSubsection}
 	/>
 	  
 	<StaticImages />

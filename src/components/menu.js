@@ -3,28 +3,16 @@ import React from "react";
 
 class Menu extends React.Component {
 	
+
+	
 	render(){
 		return(
 		
 		<div className="Menu">
 		
-		{/*<h2>MENU:</h2>
-
-
-		<ul>
-
-		<li>Sides</li>
-		<li>Main dishes</li>
-		<li>Kids</li>
-		<li>Drinks</li>
-		<li>Desserts</li>
-		<li>Vegetarian</li>
-		
-
-		</ul>
-		*/}
-		
-		<div className="menu-panel">
+		<h1>{this.props.currentFoodSubsectionMenu}</h1>
+	
+		<div id="starters" className="menu-panel">
 		
 			<div className="menu-subsection">			
 
@@ -82,6 +70,10 @@ class Menu extends React.Component {
 	
 		
 		</div>
+		
+		
+	
+		
 		
 		
 		

@@ -7,23 +7,31 @@ import Menu from "./menu";
 class Body extends React.Component{
 	
 	
-	render(){
+		render(){
 		
 		return(
 		
 		<div className="Body">	
 		
 		
-		{this.props.introShowing ? <Intro 
+		{this.props.introShowing && 
+		<Intro 
 		introShowing = {this.props.introShowing} 
 		toggleMenu = {this.props.toggleMenu}
 		companyName = {this.props.companyName} 
-		introText = {this.props.introText} 
-		/> : <Menu toggleMenu = {this.props.toggleMenu}/>}
+		introText = {this.props.introText}
+		/>}
 		
-
-
+		{!this.props.introShowing && <Menu 
+		toggleMenu = {this.props.toggleMenu}
+		currentFoodSubsectionMenu = {this.props.currentFoodSubsectionMenu}
+		showFoodSubsection = {this.props.showFoodSubsection}
+		/>
+		}
+		
 		<SidePanel />
+		
+		
 	
 		</div>
 			  

@@ -16,7 +16,7 @@ class Menu extends React.Component {
 	to the event object ONLY of the function and not the global event.*/
 	
 	this.props.showFoodSubsection(clickedId);	
-		
+	
 		
 	}
 
@@ -25,7 +25,7 @@ class Menu extends React.Component {
 		
 		<div className="Menu">
 		
-		<h1>{this.props.currentFoodSubsectionMenu}</h1>
+		<h1>{this.props.currentBodyDisplay}</h1>
 	
 		<div id="starters" className="menu-panel">
 		

@@ -17,51 +17,34 @@ class App extends Component {
 		this.state = {
 		
 		companyName: "TASTE OF MUMBAI",
-		introShowing: true,
-		showMenu: false,
-		currentFoodSubsectionMenu: null,
+		currentBodyDisplay: "Intro",
 		introText: "Taste of Mumbai welcomes you to enjoy traditional Mumbai cuisine, with a twist of indo Chinese, Punjabi and Gujarati dishes. We use fresh ingredients and the finest of herbs & spices. Mumbai Junction is a great place to bring your family and friends, with a fantastic family atmosphere, all ages are welcome as we cater for all"
 			
 		}
 
-		this.toggleMenu = this.toggleMenu.bind(this);
 		this.showFoodSubsection = this.showFoodSubsection.bind(this);
 	}
 	
-	toggleMenu(){
-		
-		if(this.state.introShowing){
-			
-			this.setState({
-			
-			introShowing: false,
-			showMenu: true
-			
-			});
-		
-		} 	else  {
-			
-			this.setState({
-			
-			introShowing: true,
-			showMenu: false
-			
-			});		
-			
-		}
-		
-	}
-	
-	showFoodSubsection = (subsection) => {
-		
-		alert(subsection);
+		showFoodSubsection = (subsection) => {
 		
 		this.setState({
-			currentFoodSubsection: subsection
+			
+			currentBodyDisplay: subsection
+			
 		});
+	
+		
+		/*alert has to be inserted as a second argument of the setState function for it to be
+		executed only after the state has actually been set - If is written directly below
+		and outside of the setState function, it will run asynchronously with setState and will
+		end up alerting null before setState actually manages to update the state.*/
 		
 		
+		
+	
 	}
+	
+	
 	
 
   render() {
@@ -75,11 +58,9 @@ class App extends Component {
 	<Gallery />
 	  
 	<Body 
-	introShowing={this.state.introShowing} 
-	toggleMenu = {this.toggleMenu} 
 	companyName = {this.state.companyName} 
-	introText={this.state.introText}
-	currentFoodSubsectionMenu = {this.state.currentFoodSubsectionMenu}
+	introText = {this.state.introText}
+	currentBodyDisplay = {this.state.currentBodyDisplay}
 	showFoodSubsection = {this.showFoodSubsection}
 	/>
 	  

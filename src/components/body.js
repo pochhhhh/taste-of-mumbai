@@ -7,30 +7,50 @@ import Menu from "./menu";
 class Body extends React.Component{
 	
 	
+	
 		render(){
+			
+			if(this.props.currentBodyDisplay === ""){
+		
+		alert("this is null");
+		
+	}
 		
 		return(
 		
 		<div className="Body">	
 		
 		
-		{this.props.introShowing && 
+		{this.props.currentBodyDisplay === "Intro" && 
+		
 		<Intro 
-		introShowing = {this.props.introShowing} 
-		toggleMenu = {this.props.toggleMenu}
 		companyName = {this.props.companyName} 
 		introText = {this.props.introText}
+		currentBodyDisplay = {this.props.currentBodyDisplay}
+		showFoodSubsection = {this.props.showFoodSubsection}
 		/>}
 		
-		{!this.props.introShowing && 
+		{this.props.currentBodyDisplay === "Menu" && 
 		<Menu 
 		toggleMenu = {this.props.toggleMenu}
-		currentFoodSubsectionMenu = {this.props.currentFoodSubsectionMenu}
+		currentBodyDisplay = {this.props.currentBodyDisplay}
 		showFoodSubsection = {this.props.showFoodSubsection}
 		/>
 		}
 		
+		{/*Conditionals to render food Menu components*/}
+		
+		{this.props.currentBodyDisplay === "Starters" && <h1>Starters</h1>}
+		{this.props.currentBodyDisplay === "Main Dishes" && <h1>Main Dishes</h1>}
+		{this.props.currentBodyDisplay === "Kids" && <h1>Kids</h1>}
+		{this.props.currentBodyDisplay === "Drinks" && <h1>Drinks</h1>}
+		{this.props.currentBodyDisplay === "Desserts" && <h1>Desserts</h1>}
+		{this.props.currentBodyDisplay === "Vegetarian" && <h1>Vegetarian</h1>}
+
+		
 		<SidePanel />
+		
+
 		
 		
 	

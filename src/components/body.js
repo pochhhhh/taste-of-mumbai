@@ -2,33 +2,40 @@ import React from "react";
 import Intro from "./intro";
 import SidePanel from "./side-panel";
 import Menu from "./menu";
-
+import Starters from "./starters";
+import MainDishes from "./main-dishes";
+import Kids from "./kids-menu";
+import Drinks from "./drinks-menu";
+import Desserts from "./desserts-menu";
+import Vegetarian from "./vegetarian-menu";
 
 class Body extends React.Component{
 	
-	
+	componentWillReceiveProps(nextProps) {
+		
+  this.setState({ data: nextProps.data });  
+  
+}
 	
 		render(){
 			
-			if(this.props.currentBodyDisplay === ""){
 		
-		alert("this is null");
-		
-	}
 		
 		return(
 		
 		<div className="Body">	
 		
 		
-		{this.props.currentBodyDisplay === "Intro" && 
 		
+		{this.props.currentBodyDisplay === "Intro" && 
 		<Intro 
 		companyName = {this.props.companyName} 
 		introText = {this.props.introText}
 		currentBodyDisplay = {this.props.currentBodyDisplay}
 		showFoodSubsection = {this.props.showFoodSubsection}
 		/>}
+		
+		
 		
 		{this.props.currentBodyDisplay === "Menu" && 
 		<Menu 
@@ -40,19 +47,17 @@ class Body extends React.Component{
 		
 		{/*Conditionals to render food Menu components*/}
 		
-		{this.props.currentBodyDisplay === "Starters" && <h1>Starters</h1>}
-		{this.props.currentBodyDisplay === "Main Dishes" && <h1>Main Dishes</h1>}
-		{this.props.currentBodyDisplay === "Kids" && <h1>Kids</h1>}
-		{this.props.currentBodyDisplay === "Drinks" && <h1>Drinks</h1>}
-		{this.props.currentBodyDisplay === "Desserts" && <h1>Desserts</h1>}
-		{this.props.currentBodyDisplay === "Vegetarian" && <h1>Vegetarian</h1>}
+		{this.props.currentBodyDisplay === "Starters" && <Starters />}
+		{this.props.currentBodyDisplay === "Main Dishes" && <MainDishes />}
+		{this.props.currentBodyDisplay === "Kids" && <Kids />}
+		{this.props.currentBodyDisplay === "Drinks" && <Drinks />}
+		{this.props.currentBodyDisplay === "Desserts" && <Desserts />}
+		{this.props.currentBodyDisplay === "Vegetarian" && <Vegetarian />}
 
+	
 		
 		<SidePanel />
-		
 
-		
-		
 	
 		</div>
 			  

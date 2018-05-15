@@ -10,21 +10,12 @@ import Desserts from "./desserts-menu";
 import Vegetarian from "./vegetarian-menu";
 
 class Body extends React.Component{
-	
-	componentWillReceiveProps(nextProps) {
-		
-  this.setState({ data: nextProps.data });  
-  
-}
-	
-		render(){
-			
-		
+
+		render(){	
 		
 		return(
 		
 		<div className="Body">	
-		
 		
 		
 		{this.props.currentBodyDisplay === "Intro" && 
@@ -32,7 +23,7 @@ class Body extends React.Component{
 		companyName = {this.props.companyName} 
 		introText = {this.props.introText}
 		currentBodyDisplay = {this.props.currentBodyDisplay}
-		showFoodSubsection = {this.props.showFoodSubsection}
+		showMenu = {this.props.showMenu}
 		/>}
 		
 		
@@ -41,23 +32,24 @@ class Body extends React.Component{
 		<Menu 
 		toggleMenu = {this.props.toggleMenu}
 		currentBodyDisplay = {this.props.currentBodyDisplay}
-		showFoodSubsection = {this.props.showFoodSubsection}
+		showMenu = {this.props.showMenu}
 		/>
 		}
 		
 		{/*Conditionals to render food Menu components*/}
 		
-		{this.props.currentBodyDisplay === "Starters" && <Starters />}
-		{this.props.currentBodyDisplay === "Main Dishes" && <MainDishes />}
-		{this.props.currentBodyDisplay === "Kids" && <Kids />}
-		{this.props.currentBodyDisplay === "Drinks" && <Drinks />}
-		{this.props.currentBodyDisplay === "Desserts" && <Desserts />}
-		{this.props.currentBodyDisplay === "Vegetarian" && <Vegetarian />}
+		{this.props.currentBodyDisplay === "Starters" && <Starters showMenu = {this.props.showMenu}/>}
+		{this.props.currentBodyDisplay === "Main Dishes" && <MainDishes showMenu = {this.props.showMenu}/>}
+		{this.props.currentBodyDisplay === "Kids" && <Kids showMenu = {this.props.showMenu}/>}
+		{this.props.currentBodyDisplay === "Drinks" && <Drinks showMenu = {this.props.showMenu} />}
+		{this.props.currentBodyDisplay === "Desserts" && <Desserts showMenu = {this.props.showMenu} />}
+		{this.props.currentBodyDisplay === "Vegetarian" && <Vegetarian showMenu = {this.props.showMenu}/>}
 
 	
 		
 		<SidePanel />
 
+			
 	
 		</div>
 			  

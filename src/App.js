@@ -22,32 +22,20 @@ class App extends Component {
 			
 		}
 
-		this.showFoodSubsection = this.showFoodSubsection.bind(this);
+		this.showMenu = this.showMenu.bind(this);
 	}
 	
-		showFoodSubsection = (subsection) => {
+		showMenu = (subsection) => {
 		
 		this.setState({
 			
 			currentBodyDisplay: subsection
 			
 		});
-	
 		
-		/*alert has to be inserted as a second argument of the setState function for it to be
-		executed only after the state has actually been set - If is written directly below
-		and outside of the setState function, it will run asynchronously with setState and will
-		end up alerting null before setState actually manages to update the state.*/
-		
-		
-		
-	
 	}
 	
-	
-	
-
-  render() {
+render() {
 	  
     return (
 	
@@ -61,7 +49,7 @@ class App extends Component {
 	companyName = {this.state.companyName} 
 	introText = {this.state.introText}
 	currentBodyDisplay = {this.state.currentBodyDisplay}
-	showFoodSubsection = {this.showFoodSubsection}
+	showMenu = {this.showMenu}
 	/>
 	  
 	<StaticImages />

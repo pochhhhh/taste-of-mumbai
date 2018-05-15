@@ -1,13 +1,37 @@
 import React from "react";
 
-const Desserts = () => {
+class Desserts extends React.Component{
 	
+	showMenu = () => {
+
+		this.props.showMenu("Menu");
+	
+	}
+	
+	render(){
 	
 	return(
 	
-	<h1>This the Desserts Menu</h1>
+	<div>
+	<h1>DESSERTS</h1>
+	<ul>
+	
+	<li>Something delicious and yummy - <strong>£5</strong></li>
+		<li>Something delicious and yummy - <strong>£5</strong></li>
+			<li>Something delicious and yummy - <strong>£5</strong></li>
+				<li>Something delicious and yummy - <strong>£5</strong></li>
+					<li>Something delicious and yummy - <strong>£5</strong></li>
+
+	
+	</ul>
+	
+	<button onClick = {this.showMenu}>BACK</button>
+	
+	</div>
 	
 	);
+	
+	}
 	
 	
 }

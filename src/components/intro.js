@@ -4,11 +4,12 @@ import SidePanel from "./side-panel";
 
 class Intro extends React.Component{
 	
-	showMenu = (event) => {
+	showMenu = (/*event*/) => {
 		
-		var clickedId = event.target.id;
-		this.props.showFoodSubsection(clickedId);
-		
+		//event.stopPropagation();
+		//var clickedId = event.target.id;
+		this.props.showMenu("Menu");
+	
 	}
 	
 	render(){

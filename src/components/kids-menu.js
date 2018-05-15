@@ -1,13 +1,36 @@
 import React from "react";
 
-const KidsMenu = () => {
+class KidsMenu extends React.Component{
 	
+	showMenu = () => {
+
+		this.props.showMenu("Menu");
+	
+	}
+	
+	render(){
 	
 	return(
 	
-	<h1>This the Kids Menu</h1>
+	<div>
+	<h1>KIDS</h1>
+	<ul>
+	
+	<li>Something delicious and yummy - <strong>£5</strong></li>
+		<li>Something delicious and yummy - <strong>£5</strong></li>
+			<li>Something delicious and yummy - <strong>£5</strong></li>
+				<li>Something delicious and yummy - <strong>£5</strong></li>
+					<li>Something delicious and yummy - <strong>£5</strong></li>
+
+	
+	</ul>
+	
+	<button onClick = {this.showMenu}>BACK</button>
+	</div>
 	
 	);
+	
+	}
 	
 	
 }

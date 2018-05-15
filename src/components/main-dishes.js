@@ -1,13 +1,35 @@
 import React from "react";
 
-const MainDishes = () => {
+class MainDishes extends React.Component{
 	
+		showMenu = () => {
+
+		this.props.showMenu("Menu");
+	
+	}
+	
+	render(){
 	
 	return(
 	
-	<h1>This the Main Dishes Menu</h1>
+		<div>
+	<h1>MAINS</h1>
+	<ul>
+	
+	<li>Something delicious and yummy - <strong>£5</strong></li>
+		<li>Something delicious and yummy - <strong>£5</strong></li>
+			<li>Something delicious and yummy - <strong>£5</strong></li>
+				<li>Something delicious and yummy - <strong>£5</strong></li>
+					<li>Something delicious and yummy - <strong>£5</strong></li>
+
+	
+	</ul>
+	<button onClick = {this.showMenu}>BACK</button>
+	</div>
 	
 	);
+	
+	}
 	
 	
 }

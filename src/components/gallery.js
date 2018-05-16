@@ -1,8 +1,18 @@
 import React from "react";
 
 let currentIndex = 0;
-const colours = ["blue", "yellow", "green", "red", "pink", "gold"];
 
+const galleryImages = [
+
+require("../images/gallery1.jpg"),
+require("../images/gallery2.jpg"),
+require("../images/gallery3.jpg"),
+require("../images/gallery4.jpg"),
+require("../images/gallery5.jpg")
+
+];
+
+var image = "../images/gallery1.jpg";
 /*
 
 - I'm going to create an array of image links called imageLinks
@@ -25,7 +35,7 @@ class Gallery extends React.Component{
 		
 		this.state = {
 			
-			 background:colours[currentIndex]
+			 backgroundImage: "url(" + galleryImages[currentIndex] + ")"
 			
 		}
 		
@@ -35,11 +45,11 @@ class Gallery extends React.Component{
 		
 		if(currentIndex === 0){
 			
-			currentIndex = colours.length - 1;
+			currentIndex = galleryImages.length - 1;
 			
 			this.setState({
 					
-					background: colours[currentIndex]
+					backgroundImage: "url(" + galleryImages[currentIndex] + ")"
 					
 				})		
 			
@@ -49,7 +59,7 @@ class Gallery extends React.Component{
 		
 		this.setState({
 					
-					background: colours[currentIndex]
+					backgroundImage:"url(" + galleryImages[currentIndex] + ")"
 					
 				})
 				
@@ -61,11 +71,11 @@ class Gallery extends React.Component{
 
 		currentIndex = currentIndex + 1;
 		
-		if(currentIndex <6){
+		if(currentIndex <5){
 				
 				this.setState({
 					
-					background: colours[currentIndex]
+					backgroundImage: "url(" + galleryImages[currentIndex] + ")"
 					
 				})
 				
@@ -75,7 +85,7 @@ class Gallery extends React.Component{
 			
 			this.setState({
 					
-				background: colours[currentIndex]
+				backgroundImage: "url(" + galleryImages[currentIndex] + ")"
 					
 				})
 		}

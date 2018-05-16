@@ -16,7 +16,7 @@ class Intro extends React.Component{
 		
 			return(
 			
-			<div className="Intro">
+			<div id="home" className="Intro">
 	
 			<div className="intro-text">
 			

@@ -5,9 +5,9 @@ class Footer extends React.Component{
 	
 	render(){
 		
-		return(<div className="Footer">
+		return(<div className="Footer" id="contact-us">
 		
-		<h1>INSERT FOOTER HERE</h1>
+		<h1>CONTACT US</h1>
 		
 		<div className="footer-contact-panel">
 		

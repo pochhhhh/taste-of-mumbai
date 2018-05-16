@@ -53,7 +53,7 @@ class Menu extends React.Component {
 	render(){
 		return(
 		
-		<div className="Menu">
+		<div className="Menu" id="food-menu">
 		
 		<h1>{this.props.currentBodyDisplay}</h1>
 	
@@ -114,15 +114,7 @@ class Menu extends React.Component {
 			</div>
 	
 		
-		</div>
-		
-		
-	
-		
-		
-		
-		
-		<button onClick={this.props.toggleMenu}>About Us</button>
+		</div>	
 
 </div>
 		

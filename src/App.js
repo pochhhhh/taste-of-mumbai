@@ -41,7 +41,11 @@ render() {
 	
 	<div className="App">
 	  
-	<Navbar />
+	<Navbar 
+	currentBodyDisplay = {this.state.currentBodyDisplay}
+	companyName = {this.state.companyName}
+	showMenu = {this.showMenu}
+	/>
 	  
 	<Gallery />
 	  

@@ -12,7 +12,6 @@ require("../images/gallery5.jpg")
 
 ];
 
-var image = "../images/gallery1.jpg";
 /*
 
 - I'm going to create an array of image links called imageLinks
@@ -101,8 +100,8 @@ class Gallery extends React.Component{
 		
 		<div className="gallery-button-panel">
 		
-		<div className="gallery-button gallery-button-left" onClick={this.galleryButtonLeft}></div>
-		<div className="gallery-button gallery-button-right" onClick={this.galleryButtonRight}></div>
+		<div className="gallery-button gallery-button-left" onClick={this.galleryButtonLeft}><i class="fa fa-chevron-left fa-2x"></i></div>
+		<div className="gallery-button gallery-button-right" onClick={this.galleryButtonRight}><i class="fa fa-chevron-right fa-2x"></i></div>
 		
 		
 		</div>

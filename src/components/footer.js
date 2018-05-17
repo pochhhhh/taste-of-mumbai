@@ -13,27 +13,27 @@ class Footer extends React.Component{
 		
 			<div className="footer-contact-item">
 		
-				<img src=""/><i class="fa fa-phone fa-4x"></i>
+				<a href="https://github.com/pochhhhh" target="_blank"><img src=""/><i class="fa fa-phone fa-4x"></i></a>
 
-					<h2>Call Us</h2>
+					<a href="https://github.com/pochhhhh" target="_blank"><h2>Call Us</h2></a>
 		
 						</div>
 	
 		
 			<div className="footer-contact-item">
 		
-				<img src=""/><i class="fa fa-envelope fa-4x"></i>
+				<a href="https://github.com/pochhhhh" target="_blank"><img src=""/><i class="fa fa-envelope fa-4x"></i></a>
 		
-					<h2>Email us</h2>
+					<a href="https://github.com/pochhhhh" target="_blank"><h2>Email us</h2></a>
 		
 						</div>
 		
 		
 			<div className="footer-contact-item">
 		
-				<img src=""/><i class="fa fa-eye fa-4x"></i>
+				<a href="https://github.com/pochhhhh" target="_blank"><img src=""/><i class="fa fa-eye fa-4x"></i></a>
 
-					<h2>Visit Us</h2>
+					<a href="https://github.com/pochhhhh" target="_blank"><h2>Visit Us</h2></a>
 		
 						</div>
 						
@@ -51,10 +51,10 @@ class Footer extends React.Component{
 					
 			<div className="social-media-panel"> 
 			
-				<i class="fa fa-instagram fa-2x"></i>
-				<i class="fa fa-facebook fa-2x"></i>
-				<i class="fa fa-twitter fa-2x"></i>
-				<i class="fa fa-youtube fa-2x"></i>
+				<a href="https://github.com/pochhhhh" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+				<a href="https://github.com/pochhhhh" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				<a href="https://github.com/pochhhhh" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				<a href="https://github.com/pochhhhh" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
 			
 			</div>
 			

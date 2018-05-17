@@ -14,15 +14,15 @@ return(
 		</div>
 	
 		<div className="box">
-		<img src="http://www.masalazone.com/MasalaZone/media/MasalaZone/popup_small_500x500_SP/Food_by_section_SP/street_food_SP/01_street_food_portrait_prosecco_1233.jpg"/>
+		<img src={require("../images/static4.jpg")}/>
 		</div>
 		
 		<div className="box">
-		<img src="http://www.masalazone.com/MasalaZone/media/MasalaZone/popup_small_500x500_SP/Food_by_section_SP/street_food_SP/01_street_food_portrait_prosecco_1233.jpg"/>
+		<img src={require("../images/static3.jpg")}/>
 		</div>
 		
 		<div className="box">
-		<img src="http://www.masalazone.com/MasalaZone/media/MasalaZone/popup_small_500x500_SP/Food_by_section_SP/street_food_SP/01_street_food_portrait_prosecco_1233.jpg"/>
+		<img src={require("../images/static2.jpg")}/>
 		</div>
 		
 </div>
